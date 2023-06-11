@@ -1,0 +1,34 @@
+.imageGalleryBackground {
+	background-color: var(--hero-beige);
+}
+
+.imageGalleryContainer {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	gap: 1rem;
+	max-width: 1500px;
+	margin: 2rem auto 0 auto;
+}
+
+.singleImageContainer {
+	max-height: 8rem;
+	flex: 1 0 10rem;
+	/* border: 1px solid black; */
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.singleImageContainer img {
+	max-height: 100%;
+	border-radius: 0.5rem;
+	box-shadow: 8px 1rem 1rem rgba(0, 0, 0, 0.3);
+	transition: max-height 0.2s ease, max-width 0.2s ease;
+	cursor: pointer;
+}
+
+.singleImageContainer img:hover {
+	max-height: 110%;
+	max-width: 100%;
+}

@@ -1,0 +1,46 @@
+.imageModalBackdrop {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100vh;
+	background-color: var(--hero-grey);
+	z-index: 1000;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+
+.modalImage {
+	max-height: 80%;
+	border-radius: 0.5rem;
+	box-shadow: 8px 1rem 1rem rgba(0, 0, 0, 0.3);
+}
+
+.imageModalBackdrop span {
+	background-color: white;
+	border-radius: 100%;
+	height: 2rem;
+	width: 2rem;
+	color: black;
+	position: absolute;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	cursor: pointer;
+}
+
+.left {
+	top: 50%;
+	left: 2rem;
+}
+
+.right {
+	top: 50%;
+	right: 2rem;
+}
+
+.exit {
+	top: 2rem;
+	right: 2rem;
+}

@@ -1,0 +1,36 @@
+.contactContentWrapper {
+	display: grid;
+	gap: 1.5rem;
+	grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+	margin: 2rem auto 0 auto;
+}
+
+.mapWrapper {
+	margin-top: 2rem;
+	display: flex;
+	justify-content: center;
+	align-items: flex-start;
+}
+
+.mapWrapper iframe {
+	border-radius: 2rem;
+}
+
+.mapTextContentContainer {
+	padding: 0 0 2rem 2rem;
+	text-align: left;
+}
+
+.mapTextContentContainer h4 {
+	font-style: italic;
+	letter-spacing: 0.1rem;
+}
+
+.listWrapper {
+	display: flex;
+}
+
+.listItems {
+	padding: 1rem;
+	padding-left: 0;
+}
