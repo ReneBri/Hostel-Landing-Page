@@ -2,6 +2,7 @@
 	display: grid;
 	gap: 1.5rem;
 	grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+	grid-template-rows: repeat(auto-fill, minmax(1fr, 1fr));
 	margin: 2rem auto 0 auto;
 }
 
@@ -13,7 +14,7 @@
 }
 
 .mapWrapper iframe {
-	border-radius: 2rem;
+	border-radius: 1rem;
 }
 
 .mapTextContentContainer {
@@ -23,6 +24,7 @@
 
 .mapTextContentContainer h4 {
 	font-style: italic;
+	font-size: 1.5rem;
 	letter-spacing: 0.1rem;
 }
 
@@ -33,4 +35,24 @@
 .listItems {
 	padding: 1rem;
 	padding-left: 0;
+}
+
+.contactLogo {
+	height: 40px;
+}
+
+.contactContentWrapper li {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.contactContentWrapper h4 {
+	font-size: 1.5rem;
+	padding: 0.5rem;
+}
+
+.contactContentWrapper a {
+	border-radius: 1rem;
+	box-shadow: 8px 1rem 1rem rgba(0, 0, 0, 0.3);
 }
