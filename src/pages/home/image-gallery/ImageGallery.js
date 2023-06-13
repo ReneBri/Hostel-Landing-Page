@@ -30,6 +30,9 @@ const ImageGallery = ({handleShowImageModal}) => {
 		<section>
 			<div className={styles.imageGalleryBackground}>
 				<div className="content-wrapper">
+					<div
+						id="gallery-anchor"
+						style={{position: "absolute", top: "-90px", left: 0}}></div>
 					<h3>Gallery</h3>
 					<div className={styles.imageGalleryContainer}>
 						<div className={styles.singleImageContainer}>

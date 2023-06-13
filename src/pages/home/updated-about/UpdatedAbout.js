@@ -6,7 +6,8 @@ import React from "react";
 const UpdatedAbout = () => {
 	return (
 		<section>
-			<div className={styles.aboutWrapper}>
+			<div className={styles.aboutWrapper} id="about">
+				<div id="about-anchor" style={{position: "absolute", top: "-90px", left: 0}}></div>
 				<div className={styles.aboutImage} style={{backgroundImage: `url(${img5})`}}>
 					<h3>About Us</h3>
 				</div>

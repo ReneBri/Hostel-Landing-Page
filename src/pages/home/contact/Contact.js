@@ -17,6 +17,9 @@ const Contact = () => {
 	return (
 		<section>
 			<div className="content-wrapper">
+				<div
+					id="contact-anchor"
+					style={{position: "absolute", top: "-70px", left: 0}}></div>
 				<h3 id={styles.contactH3}>Contact or Book Now</h3>
 				<div className={styles.contactContentWrapper}>
 					<div className={styles.boxShadow}>
