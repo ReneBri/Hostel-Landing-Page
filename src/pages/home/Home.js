@@ -8,6 +8,7 @@ import About from "./about/About";
 import ImageGallery from "./image-gallery/ImageGallery";
 import ImageModal from "../../components/UI/modal/ImageModal";
 import Contact from "./contact/Contact";
+import UpdatedAbout from "./updated-about/UpdatedAbout";
 
 const Home = () => {
 	const [showImageModal, setShowImageModal] = useState(false);
@@ -20,7 +21,8 @@ const Home = () => {
 	return (
 		<div className={styles.contentWrapper}>
 			<Hero />
-			<About />
+			<UpdatedAbout />
+			{/* <About /> */}
 			<ImageGallery handleShowImageModal={handleShowImageModal} />
 			{showImageModal &&
 				ReactDOM.createPortal(

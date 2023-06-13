@@ -6,6 +6,26 @@
 	margin: 2rem auto 0 auto;
 }
 
+#contactH3 {
+	position: relative;
+	z-index: 1;
+	display: inline-block;
+	padding: 0 0.5rem;
+	text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.4);
+}
+
+#contactH3:before {
+	content: "";
+	height: 0.3rem;
+	width: 100%;
+	top: 54%;
+	left: 0;
+	position: absolute;
+	background-color: rgba(173, 31, 46, 0.7);
+	transform: skewY(-1deg);
+	z-index: -1;
+}
+
 .mapWrapper {
 	margin-top: 2rem;
 	display: flex;
@@ -55,4 +75,9 @@
 .contactContentWrapper a {
 	border-radius: 1rem;
 	box-shadow: 8px 1rem 1rem rgba(0, 0, 0, 0.3);
+}
+
+.boxShadow {
+	box-shadow: 8px 1rem 1rem rgba(0, 0, 0, 0.3);
+	border-radius: 1rem;
 }

@@ -7,11 +7,11 @@
 :root {
 	/* These are colors from the images in the media folder */
 	--logo-black: #211f20;
-	--logo-red: #ad1f2e;
+	--logo-red: rgb(173, 31, 46);
 	--logo-white: #fdfeff;
 
 	--hero-grey: #68727b;
-	--hero-beige: #b9aa97;
+	--hero-beige: rgb(185, 170, 151);
 	--hero-red: #c23532;
 }
 
@@ -54,6 +54,7 @@ h4,
 h5,
 h6 {
 	font-family: "Playfair Display", serif;
+	text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.7);
 }
 
 .content-wrapper {

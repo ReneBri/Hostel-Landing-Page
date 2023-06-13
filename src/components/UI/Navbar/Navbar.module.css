@@ -6,6 +6,7 @@ nav {
 	left: 0;
 	width: 100%;
 	box-shadow: 1px 1px 1rem black;
+	z-index: 999;
 }
 
 .navWrapper {
@@ -30,11 +31,11 @@ nav {
 	padding: 0 1.5rem;
 	border-left: 1px solid var(--logo-white);
 	cursor: pointer;
+	transition: color 0.3s ease;
 }
 
 .navWrapper li:hover {
 	color: var(--hero-red);
-	transition: color 0.5s ease;
 }
 
 .navWrapper li:first-child {

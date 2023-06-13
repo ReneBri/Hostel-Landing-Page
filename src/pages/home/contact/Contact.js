@@ -17,21 +17,23 @@ const Contact = () => {
 	return (
 		<section>
 			<div className="content-wrapper">
-				<h3>Contact or Book Now</h3>
+				<h3 id={styles.contactH3}>Contact or Book Now</h3>
 				<div className={styles.contactContentWrapper}>
-					<Card backgroundImg={img1}>
-						<h4>Phone & Email</h4>
-						<ul>
-							<li>
-								<Phone fill="white" height="22px" />
-								<p>+61 472 506 174</p>
-							</li>
-							<li>
-								<Email fill="white" height="22px" />
-								<p>contact@queenvichostel.com</p>
-							</li>
-						</ul>
-					</Card>
+					<div className={styles.boxShadow}>
+						<Card backgroundImg={img1}>
+							<h4>Phone & Email</h4>
+							<ul>
+								<li>
+									<Phone fill="white" height="22px" />
+									<p>+61 472 506 174</p>
+								</li>
+								<li>
+									<Email fill="white" height="22px" />
+									<p>contact@queenvichostel.com</p>
+								</li>
+							</ul>
+						</Card>
+					</div>
 					<a
 						href="https://www.hostelworld.com/pwa/hosteldetails.php/Queen-Victoria-Hostel/Melbourne/304404"
 						target="_blank"

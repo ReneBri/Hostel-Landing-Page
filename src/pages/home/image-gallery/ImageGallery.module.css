@@ -1,29 +1,67 @@
 .imageGalleryBackground {
+	/* margin-top: 1rem; */
 	background-color: var(--hero-beige);
+	position: relative;
+}
+
+.imageGalleryBackground:after {
+	content: "";
+	position: absolute;
+	left: 0;
+	right: 0;
+	bottom: -25px;
+	height: 50px;
+	transform: skewY(-1deg);
+	background-color: var(--hero-beige);
+	z-index: -1;
+}
+
+.imageGalleryBackground h3 {
+	position: relative;
+	display: inline-block;
+	z-index: 1;
+	padding: 0 0.5rem;
+	text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.4);
+}
+
+.imageGalleryBackground h3:before {
+	content: "";
+	height: 0.3rem;
+	width: 100%;
+	top: 52%;
+	left: 0;
+	position: absolute;
+	background-color: rgba(173, 31, 46, 0.7);
+	transform: skewY(-3deg);
+	z-index: -1;
 }
 
 .imageGalleryContainer {
 	display: flex;
+	justify-content: center;
 	flex-direction: row;
 	flex-wrap: wrap;
 	gap: 1rem;
 	max-width: 1500px;
 	margin: 2rem auto 0 auto;
+	/* border: 1px solid black; */
 }
 
 .singleImageContainer {
-	max-height: 8rem;
-	flex: 1 0 10rem;
-	/* border: 1px solid black; */
+	max-height: 6rem;
+	flex: 0 0 8rem;
 	display: flex;
 	align-items: center;
 	justify-content: center;
+	background-color: rgba(0, 0, 0, 0.1);
+	border-radius: 0.5rem;
+	/* border: 1px solid black; */
 }
 
 .singleImageContainer img {
 	max-height: 100%;
 	border-radius: 0.5rem;
-	box-shadow: 8px 1rem 1rem rgba(0, 0, 0, 0.3);
+	/* box-shadow: 8px 1rem 1rem rgba(0, 0, 0, 0.3); */
 	transition: max-height 0.2s ease, max-width 0.2s ease;
 	cursor: pointer;
 }
