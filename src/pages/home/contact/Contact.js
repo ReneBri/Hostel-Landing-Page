@@ -72,9 +72,7 @@ const Contact = () => {
 						title="Unique"
 						height="450"
 						style={{border: 0}}
-						allowfullscreen=""
-						loading="lazy"
-						referrerpolicy="no-referrer-when-downgrade"></iframe>
+						loading="lazy"></iframe>
 					<div className={styles.mapTextContentContainer}>
 						<h4>Our Facilities Include:</h4>
 						<div className={styles.listWrapper}>

@@ -18,10 +18,6 @@
 	z-index: 1;
 }
 
-.aboutImage img {
-	max-width: 100%;
-}
-
 .aboutImage {
 	position: absolute;
 	top: 0;
@@ -81,4 +77,27 @@
 
 .paragraphWrapper {
 	padding: 2rem;
+}
+
+@media only screen and (max-width: 880px) {
+	.aboutWrapper {
+		flex-direction: column;
+	}
+	.aboutImage {
+		margin: 2rem 0 1.5rem 0;
+		width: 100%;
+		height: 0;
+		position: relative;
+	}
+
+	.textContentWrapper {
+		width: 100%;
+		left: 0;
+	}
+}
+
+@media only screen and (max-width: 660px) {
+	.paragraphWrapper {
+		text-align: center;
+	}
 }

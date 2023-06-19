@@ -55,3 +55,18 @@
 	font-weight: 300;
 	font-style: italic;
 }
+
+@media only screen and (max-width: 880px) {
+	.heroContainer h1 {
+		font-size: 5.5vw;
+	}
+	.taglineWrapper p {
+		font-size: 4vw;
+	}
+}
+
+@media only screen and (max-width: 660px) {
+	.heroContainer {
+		padding: 10rem;
+	}
+}

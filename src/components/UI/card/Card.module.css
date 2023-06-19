@@ -12,6 +12,13 @@
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
+	transition: transform 0.2s ease, height 0.2s ease, width 0.2s ease;
+}
+
+.card:hover {
+	transform: rotate(1deg);
+	height: 101%;
+	width: 101%;
 }
 
 .cardWithBackground {
